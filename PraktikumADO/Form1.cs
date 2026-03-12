@@ -65,8 +65,16 @@ namespace PraktikumADO
 
                 txtHasil.Text = jumlah.ToString();
 
-
+                conn.Close();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            MessageBox.Show("Hitung Mhs berhasil");
+            }
+
         }
 
         private void btnHitungMK_Click(object sender, EventArgs e)
