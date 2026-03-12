@@ -120,9 +120,15 @@ namespace PraktikumADO
                 
                 int hasil = cmd.ExecuteNonQuery();
 
+                MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
 
-
+                conn.Close();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void label1_Click(object sender, EventArgs e)
         {
