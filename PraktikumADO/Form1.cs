@@ -21,6 +21,12 @@ namespace PraktikumADO
             InitializeComponent();
         }
 
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=DESKTOP-8U71E72\\RARA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+        }
         private void btnConnect_Click(object sender, EventArgs e)
         {
 
