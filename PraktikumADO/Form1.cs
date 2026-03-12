@@ -27,6 +27,12 @@ namespace PraktikumADO
                 "Data Source=DESKTOP-8U71E72\\RARA;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         private void btnConnect_Click(object sender, EventArgs e)
         {
 
