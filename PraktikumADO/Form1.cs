@@ -105,6 +105,14 @@ namespace PraktikumADO
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+                private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+            
+                string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'"
 
         }
 
