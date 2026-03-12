@@ -38,8 +38,17 @@ namespace PraktikumADO
             try
             {
                 Koneksi();
+                conn.Open();
 
+                MessageBox.Show("Koneksi ke database berhasil");
+
+                conn.Close();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void btnHitungMhs_Click(object sender, EventArgs e)
         {
